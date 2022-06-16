@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Epilogue', sans-serif;
+}
+
+body {
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+
+/* ********* */
+ /* Nav Bar  */
+ /* ******** */
+ header {
+  width: 100%;
+  flex-wrap: wrap;
+  padding-bottom: 15px;
+  color: hsl(0, 0%, 41%);
+  margin-top: 2em;
+  margin-bottom: 2em;
+ }
+
+ 
+
+.nav-container {
+  display: flex;
+  /* margin: 2em; */
+  position: relative;
+  
+  /* width: 100%; */
+}
+.nav-list {
+  display: flex;
+    width: 100%;
+  /* gap: 20px; */
+}
+
+.nav-list:hover {
+  color: hsl(0, 0%, 8%);
+}
+
+.select {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 0 2em 0 2em;
+
+
+}
+
+.dropdown {
+  min-width: 10em;
+  position: relative;
+}
+
+.caret {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid black;
+  transition: 0.3s;
+}
+
+.caret-rotate {
+  transform: rotate(180deg);
+}
+
+.img-icon {
+  padding-right: 10px;
+}
+
+.menu {
+  padding: 0.2em 0.5em;
+  background: hsl(0, 0%, 98%);
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+
+  position: absolute;
+  border-radius: 0.5em;
+  top: 1.5em;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  opacity: 0;
+  display: none;
+  transition: 0.2s;
+  z-index: 1;
+}
+
+.menu li {
+  padding: 5px 20px 5px 10px;
+  margin: 0.3em 0;
+  border-radius: 0.5em;
+  cursor: pointer;
+
+}
+
+.menu li:hover {
+  background: #e3e5ea;
+}
+
+.active {
+background: hsl(0, 0%, 90%);;
+}
+.menu-open {
+  display: block;
+  opacity: 1;
+}
+
+.nav-box {
+  display: flex;
+}
+
+.logo-img {
+  padding-right: 20px;
+}
+
+
+.other-links {
+  padding-left: 40px;
+}
+
+.login-info ul {
+  display: flex;
+}
+
+
+.login-links li, a {
+  text-decoration: none;
+  color: black;
+  
+}
+
+
+.login-links {
+  display: flex;
+  gap: 8em;
+}
+.other-links {
+  display: flex;
+  gap: 5em;
+}
+
+
+
+/****************/
+/* Hero Section */
+/* ************ */
+h1 {
+  font-size: 4em;
+  font-weight: 900;
+}
+
+p {
+  margin-top: 3.5em;
+  margin-bottom: 3.5em;
+  color: hsl(0, 0%, 41%);
+  line-height: 1.7em;
+  font-weight: 700;
+}
+
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+.various-icons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5em;
+
+}
+
+.item-1 {
+  display: grid;
+  text-align: left;
+  align-items: center;
+
+}
+
+.info-container {
+padding-right: 90px;
+}
+
+.hero-image {
+  min-width: 20%;
+  width: 100%;
+  height: 90vh;
+}
+
+button {
+  padding: 13px 27px 13px 27px;
+  border-radius: 7px;
+  background: none;
+  border: 2px solid black;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+
+}
+
